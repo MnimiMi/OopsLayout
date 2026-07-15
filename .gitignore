@@ -1,0 +1,19 @@
+bin/
+obj/
+.vs/
+.idea/
+.claude/settings.local.json
+*.user
+*.suo
+.DS_Store
+
+# Swift / macOS build artifacts
+OopsLayout.Mac/.build/
+OopsLayout.Mac/.build-arm64/
+OopsLayout.Mac/.build-x86_64/
+OopsLayout.Mac/*.app/
+OopsLayout.Mac/*.dmg
+.swiftpm/
+CLAUDE.md
+.claude
+.idea
