@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
+    <AssemblyName>OopsLayout</AssemblyName>
+    <RootNamespace>OopsLayout.Windows</RootNamespace>
+    <Version>0.3.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OopsLayout.Core\OopsLayout.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Embedded so the tray icon loads from a single-file exe (no loose Resources\ folder). -->
+    <EmbeddedResource Include="Resources\icon.ico" />
+  </ItemGroup>
+</Project>
